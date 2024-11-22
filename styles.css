@@ -1,0 +1,174 @@
+:root{
+    --verde-control: #3AA867;
+    --cinza-control: #33404D;
+    --cor-fundo: #f9f9f9;
+    --font-main: Inter, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    list-style: none;
+    z-index: 1000;
+    
+}
+.cadastro{
+  background-color: blueviolet;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login{
+  background-color: blueviolet;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.corpo-editar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #69b388;
+
+}
+.card{
+  width: 400px;
+  height: 500px;
+  background-color: rgb(119, 35, 189);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titulo{
+  color: black;
+}
+.title{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 30px;
+}
+.form-login{
+  width: 90%;
+  height: 70%;
+  background-color: rgb(51, 105, 206);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+.group{
+  position: relative;
+}
+.form-login .group label{
+  font-size: 16px;
+  /* color: blueviolet; */
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: rgb(255, 0, 0);
+  font-weight: 600;
+  transition: all 0.3 ease;
+}
+.form-login .group input{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(25,35,82, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+}
+.form-login .group input:placeholder-shown+label{
+  top: 10px;
+  background-color: transparent;
+}
+.form-login .group input:focus{
+  border-color: black;
+}
+.form-login .group input:focus+label{
+  top: -10px;
+  left: 10px;
+  background-color: rgb(255,0,0);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 2px;
+}
+.form-login button{
+  width: 60%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: aliceblue;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.4 ease;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+
+}
+
+.area-info{
+    z-index: 1;
+    position: fixed;
+    top: 157px;
+    right: 2vh;
+    left: 27vh;
+    bottom: 2vh;
+    height: auto;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.12);
+    overflow: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+    font-family: Inter;
+    font-style: bold;
+  }
+.area-tabela{
+    width: 90%;
+    height: 70%;
+    background-color: rgb(255, 255, 255,0.5);
+    gap: 15px;
+    margin-top: 2rem;
+  }
+  
+  .tabela {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: rgb(255, 255, 255,0.5);
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    border: 1px solid black; 
+    padding: 8px;
+    text-align: left;
+    color: var(--cinza-control);
+  }
+  
+  th {
+    background-color: var(--cinza-control);
+    color: var(--cor-fundo);
+  }
+  
